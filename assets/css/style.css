@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Macondo&display=swap');
+
+body {
+    font-family: 'inter', sans-serif;
+}
+
+h1 {
+    font-family: 'macondo', cursive;
+}
