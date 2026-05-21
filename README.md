@@ -1,6 +1,6 @@
 # 📘 Boardwalk Games – Wireframe Documentation
 
-Overview
+## Overview
 
 These wireframes outline the structure and user flow for the Boardwalk Games website. They represent the key pages, navigation layout, booking flow, and footer information that will form the basis of the site build.
 
@@ -32,9 +32,9 @@ Hero section
 - Short tagline describing the café and offerings
 - Prominent "Book Now" button
 
-Services overview
+## Services overview
 
-Grid of service tiles
+Grid of service tiles:
 
 - Play in our café
 - Game library
@@ -113,4 +113,4 @@ Displayed after form submission
 - Navigates via header or service tiles
 - Chooses "Book Now" or a specific service
 - Completes booking form
-- Receives confirmation on Thank-you page
+- Receives confirmation on the Thank-you page

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game Reservation Booking Form</title>
+	<style>
+		:root{--max-width:720px;--accent:#0b5cff}
+		body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4;padding:24px;background:#f6f8fb;color:#0b1a2b}
+		.container{max-width:var(--max-width);margin:0 auto;background:#fff;border-radius:10px;padding:20px;box-shadow:0 6px 20px rgba(13,20,40,.08)}
+		h1{font-size:1.25rem;margin:0 0 12px}
+		p.lead{margin:0 0 18px;color:#556}
+		form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+		label{display:block;font-size:.85rem;margin-bottom:6px;color:#113}
+		input[type="text"],input[type="email"],input[type="tel"],input[type="date"],input[type="time"],select,textarea{width:100%;padding:10px;border:1px solid #d5dbe8;border-radius:8px;font-size:.95rem}
+		textarea{min-height:90px;resize:vertical}
+		.full{grid-column:1/3}
+		.actions{display:flex;gap:10px;align-items:center;justify-content:space-between;grid-column:1/3;margin-top:6px}
+		.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+		.btn.secondary{background:#eef3ff;color:var(--accent);border:1px solid rgba(11,92,255,.12)}
+		.help{font-size:.85rem;color:#556}
+		@media (max-width:640px){form{grid-template-columns:1fr} .actions{flex-direction:column;align-items:stretch}}
+	</style>
+</head>
+<body>
+	<main class="container">
+		<h1>Book a Game Reservation</h1>
+		<p class="lead">Reserve a board game for your next visit to Boardwalk Games. Pick your challeng, and let the adventure begin!
+             Fill out your details and preferred game below, and we'll have it set aside for you when you arrive..</p>
+
+		<form id="bookingForm" autocomplete="on" novalidate>
+			<div class="full">
+				<label for="game">Select Game or Event *</label>
+				<select id="game" name="game" required>
+					<option value="">-- Choose a game or event --</option>
+					<option>Family Game Night</option>
+					<option>Competitive Tournament</option>
+					<option>Kids Play Session</option>
+					<option>Escape Room Style</option>
+					<option>Classic Board Rotation</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="firstName">First Name *</label>
+				<input id="firstName" name="firstName" type="text" required placeholder="First name">
+			</div>
+			<div>
+				<label for="lastName">Last Name *</label>
+				<input id="lastName" name="lastName" type="text" required placeholder="Last name">
+			</div>
+
+			<div>
+				<label for="email">Email *</label>
+				<input id="email" name="email" type="email" required placeholder="you@example.com">
+			</div>
+			<div>
+				<label for="phone">Phone</label>
+				<input id="phone" name="phone" type="tel" placeholder="(555) 555-5555">
+			</div>
+
+			<div>
+				<label for="date">Preferred Date *</label>
+				<input id="date" name="date" type="date" required>
+			</div>
+			<div>
+				<label for="time">Preferred Time *</label>
+				<input id="time" name="time" type="time" required>
+			</div>
+
+			<div>
+				<label for="players">Number of Players *</label>
+				<input id="players" name="players" type="text" required inputmode="numeric" pattern="\d+" placeholder="e.g., 4">
+			</div>
+			<div>
+				<label for="duration">Estimated Duration</label>
+				<select id="duration" name="duration">
+					<option>60 minutes</option>
+					<option selected>90 minutes</option>
+					<option>2 hours</option>
+					<option>Customized</option>
+				</select>
+			</div>
+
+			<div class="full">
+				<label for="notes">Additional Notes or Requests</label>
+				<textarea id="notes" name="notes" placeholder="Allergies, accessibility needs, special requests..."></textarea>
+			</div>
+
+			<div class="full">
+				<label><input type="checkbox" id="terms" name="terms" required> I agree to the terms and cancellation policy *</label>
+			</div>
+
+			<div class="actions">
+				<div class="help">We will confirm availability by email within 24 hours.</div>
+				<div style="display:flex;gap:8px">
+					<button type="reset" class="btn secondary">Reset</button>
+					<button type="submit" class="btn">Request Reservation</button>
+				</div>
+			</div>
+		</form>
+
+		<script>
+			document.getElementById('bookingForm').addEventListener('submit', function(e){
+				e.preventDefault();
+				if(!this.checkValidity()){
+					this.reportValidity();
+					return;
+				}
+				// Minimal client-side confirmation. Replace with real submit logic.
+				alert('Reservation request sent. You will receive a confirmation email soon.');
+				this.reset();
+			});
+		</script>
+	</main>
+</body>
+</html>
