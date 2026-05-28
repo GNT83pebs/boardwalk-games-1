@@ -1,5 +1,7 @@
 # 📘 Boardwalk Games – Wireframe Documentation
 
+![Alt text][def]
+
 ## Overview
 
 These wireframes outline the structure and user flow for the Boardwalk Games website. They represent the key pages, navigation layout, booking flow, and footer information that will form the basis of the site build.
@@ -114,3 +116,6 @@ Displayed after form submission
 - Chooses "Book Now" or a specific service
 - Completes booking form
 - Receives confirmation on the Thank-you page
+
+
+[def]: path/to/image.png.
