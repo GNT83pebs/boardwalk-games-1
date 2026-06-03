@@ -41,16 +41,16 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#events" class="nav-link">Events</a>
+                        <a href="events.html" class="nav-link">Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="game-library.html">Games</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a href="assets/game-reservation-booking-form.html" class="btn custom-button-filled ms-lg-3">Book now</a>
@@ -229,6 +229,58 @@
                 </div>
             </div>
         </section>
+
+        <section id="testimonials" class="container section">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="display-6">What our customers say</h2>
+                    <p class="mb-4">Trusted by board game lovers across the city — real stories from happy visitors.</p>
+                </div>
+                <div class="col-12">
+                    <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel" data-bs-interval="7000" data-bs-touch="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card testimonial-card mx-auto">
+                                    <div class="card-body">
+                                        <p class="card-text">"The atmosphere at Boardwalk Games is incredible. We found our new favourite spot for game nights thanks to the friendly staff and amazing game selection."</p>
+                                        <p class="testimonial-author">— Sarah M., student</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card testimonial-card mx-auto">
+                                    <div class="card-body">
+                                        <p class="card-text">"The kids party package was perfect. Great fun, easy booking, and the organisers made the whole day feel special."</p>
+                                        <p class="testimonial-author">— James K., parent</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card testimonial-card mx-auto">
+                                    <div class="card-body">
+                                        <p class="card-text">"I love the mix of classic and new games here. The event nights are always well run, and the vibe is welcoming for everyone."</p>
+                                        <p class="testimonial-author">— Aisling T., enthusiast</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer / contact section -->
@@ -260,6 +312,20 @@
                         <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)"
                             rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
+                </div>
+
+                <!-- Newsletter sign up -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h3 class="sub-heading-color">Newsletter</h3>
+                    <p>Get the latest events, special offers, and gaming news delivered to your inbox.</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <label for="newsletter-email" class="visually-hidden">Email address</label>
+                        <div class="input-group">
+                            <input type="email" id="newsletter-email" name="email" class="form-control"
+                                placeholder="Enter your email" aria-label="Email address" required>
+                            <button type="submit" class="btn custom-button-filled">Subscribe</button>
+                        </div>
+                    </form>
                 </div>
 
                 <!-- Opening times -->

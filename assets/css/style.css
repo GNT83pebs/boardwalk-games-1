@@ -106,6 +106,49 @@ h2 {
     font-size: 0.7rem;
 }
 
+#testimonials .testimonial-card {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 12px 35px rgba(58, 38, 32, 0.08);
+    min-height: 220px;
+}
+
+#testimonials .testimonial-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 190px;
+}
+
+#testimonialCarousel .testimonial-card {
+    max-width: 720px;
+    border: none;
+    box-shadow: 0 16px 45px rgba(58, 38, 32, 0.08);
+}
+
+#testimonialCarousel .carousel-item {
+    padding: 1rem 0;
+}
+
+#testimonialCarousel .carousel-indicators [aria-current="true"] {
+    background-color: var(--highlight-color);
+}
+
+#testimonials .testimonial-author {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: 1.25rem;
+}
+
+#testimonials p.card-text {
+    color: #4d3c33;
+    line-height: 1.8;
+}
+
+#testimonials .col-12 {
+    margin-bottom: 1rem;
+}
+
 .student-discount {
     background-color: var(--highlight-color);
     font-weight: bold;
@@ -158,6 +201,35 @@ h2 {
 
 #contact .table-dark * {
     background-color: transparent;
+}
+
+#contact .newsletter-form {
+    margin-top: 1rem;
+}
+
+#contact .newsletter-form .input-group {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#contact .newsletter-form .form-control {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+#contact .newsletter-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#contact .newsletter-form .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 0 0.2rem rgba(65, 106, 142, 0.25);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+#contact .newsletter-form button {
+    min-width: 140px;
 }
 
 /* grid visualisation CSS for testing */
