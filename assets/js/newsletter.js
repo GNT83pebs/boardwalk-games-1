@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.newsletter-form').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var emailInput = form.querySelector('input[name="email"]');
-      if (!emailInput) return;
+  var form = document.querySelector('.newsletter-form');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var emailInput = form.querySelector('input[name="email"]');
+    if (!emailInput) return;
       // Use native validation where available
       if (!emailInput.checkValidity()) {
         if (typeof emailInput.reportValidity === 'function') {
@@ -18,5 +19,4 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Thanks — we will send updates to ' + email + '.');
       form.reset();
     });
-  });
 });

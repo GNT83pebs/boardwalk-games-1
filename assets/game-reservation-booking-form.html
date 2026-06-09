@@ -3,7 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reserve a board game at Boardwalk Games with our easy online booking form. Select your game, date, and details for a seamless reservation.">
+    <link rel="canonical" href="https://boardwalk-games.co/assets/game-reservation-booking-form.html">
 	<title>Reserve a Game | Boardwalk Games</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+
 	<style>
 		:root{--max-width:720px;--accent:#0b5cff}
 		body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4;padding:24px;background:#f6f8fb;color:#0b1a2b}
@@ -30,20 +40,19 @@
 		<form id="bookingForm" autocomplete="on" novalidate>
 			<div class="full">
 				<label for="fullName">Full name *</label>
-				<input id="fullName" name="fullName" type="text" required placeholder="Your full name">
-			</div>
+                	<input id="fullName" name="fullName" type="text" autocomplete="name" required placeholder="Your full name">
+                </div>
 
-			<div class="full">
-				<label for="phone">Phone number *</label>
-				<input id="phone" name="phone" type="tel" required placeholder="(555) 555-5555">
-			</div>
+                <div class="full">
+                	<label for="phone">Phone number *</label>
+                	<input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="(555) 555-5555">
+                </div>
 
-			<div class="full">
-				<label for="email">Email address *</label>
-				<input id="email" name="email" type="email" required placeholder="you@example.com">
-			</div>
-
-			<div class="full">
+                <div class="full">
+                    <label for="email">Email address *</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+                </div>
+                <div class="full">
 				<label for="game">Game selection *</label>
 				<select id="game" name="game" required>
 					<option value="">Select game</option>
@@ -51,7 +60,7 @@
 					<option>Mystic Woods</option>
 					<option>Captain's Gambit</option>
 					<option>Critter Quest</option>
-					<option>Setters of Catan</option>
+					<option>Settlers of Catan</option>
 					<option>Monopoly</option>
 					<option>Exploding Kittens</option>
 					<option>Cluedo</option>
