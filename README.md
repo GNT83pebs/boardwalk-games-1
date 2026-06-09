@@ -1,6 +1,6 @@
 # 📘 Boardwalk Games – Wireframe Documentation
 
-![Boardwalk Games Wireframe](assets/images/wireframe.png)
+![Boardwalk Games Wireframe](assets/images/wireframe-bw-overview.svg)
 
 ## Overview
 
@@ -10,15 +10,15 @@ These wireframes outline the structure and user flow for the Boardwalk Games web
 
 ### Homepage wireframe
 
-![Homepage Wireframe](assets/images/boardwalk-games-carousel-image-1.webp)
+![Homepage Wireframe](assets/images/wireframe-bw-homepage.svg)
 
 ### Games library wireframe
 
-![Games Library Wireframe](assets/images/game-library-carousel-1.webp)
+![Games Library Wireframe](assets/images/wireframe-bw-gamelibrary.svg)
 
 ### Booking form wireframe
 
-![Booking Form Wireframe](assets/images/services-4.webp)
+![Booking Form Wireframe](assets/images/wireframe-bw-booking-form.svg)
 
 ## Global layout
 

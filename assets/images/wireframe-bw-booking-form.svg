@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500">
+  <rect width="760" height="500" fill="#fff"/>
+  <rect x="20" y="20" width="120" height="40" fill="#000"/>
+  <text x="80" y="48" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">Logo</text>
+  <rect x="160" y="20" width="580" height="40" fill="#fff" stroke="#000"/>
+  <text x="380" y="90" font-family="sans-serif" font-size="18" fill="#000" text-anchor="middle">Booking form</text>
+  <rect x="40" y="120" width="680" height="40" stroke="#000" fill="#fff"/>
+  <text x="100" y="145" font-family="sans-serif" font-size="12" fill="#000">Full name</text>
+  <rect x="40" y="180" width="320" height="40" stroke="#000" fill="#fff"/>
+  <rect x="400" y="180" width="320" height="40" stroke="#000" fill="#fff"/>
+  <text x="200" y="205" font-family="sans-serif" font-size="12" fill="#000">Email</text>
+  <text x="560" y="205" font-family="sans-serif" font-size="12" fill="#000">Phone</text>
+  <rect x="40" y="240" width="680" height="100" stroke="#000" fill="#fff"/>
+  <text x="380" y="295" font-family="sans-serif" font-size="12" fill="#000">Comments / special requests</text>
+  <rect x="40" y="360" width="200" height="40" fill="#000"/>
+  <text x="140" y="388" font-family="sans-serif" font-size="14" fill="#fff">Submit</text>
+  <rect x="0" y="480" width="760" height="20" fill="#000"/>
+</svg>
